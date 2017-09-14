@@ -9,6 +9,12 @@ public abstract class CollegeLevelCourse {
     private String courseNumber;
     private double credits;
     
+    public CollegeLevelCourse(String courseName, String courseNumber, String departmentName){
+        setCourseName(courseName);
+        setCourseNumber(courseNumber);
+        setDepartmentName(departmentName);
+    }
+    
     //----------------------//
     //--- GETTER METHODS ---//
     //----------------------//
