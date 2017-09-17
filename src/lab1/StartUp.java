@@ -12,7 +12,13 @@ package lab1;
  * Since you should be able to instantiate a CollegeLevelCourse as well as an AdvancedCollegeLevelCourse I made them 
  * concrete but included an abstract GenericSchoolCourse that had minimal properties of a school course such as a Name
  * and a school code that can be used for polymorphism but should likely be extended to include more specific values such as 
- * MiddleSchoolCourse which might have gradeLevel instead off creditHours.
+ * MiddleSchoolCourse which might have gradeLevel instead off credits. Making it abstract does this even though I do not 
+ * include any abstract methods.
+ * 
+ * Liskov substitution principle can be applied for whenever output of the course name is needed such as to a website that lists
+ * courses across all shcools in a state regardless of their grade level subclasses. It can also be applied in the case of 
+ * AdvancedCollegeLevelCourse's prerequisites which only care that the course is at least a CollegeLevelCourse and thus other 
+ * AdvacnedCollegeLevelCourses can apply here too. 
  * 
  * @author Brandon
  * @version 1.0
