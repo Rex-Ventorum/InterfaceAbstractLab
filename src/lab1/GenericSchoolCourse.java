@@ -4,7 +4,10 @@ package lab1;
 /**
  * A Generic School course is one that just has a name and school code that it belongs to
  * The name is required but the school code can be left as 0 if it is a nation wide course or
- * just not needed.
+ * just not needed. This class does not contain a lot of information and thus should be subclassed 
+ * and not instantiated.
+ * 
+ * Examples may be: CollegeLevelCourse, ElementryCourse, MiddleSchoolCourse, or even CommunityCourse
  * 
  * @author Brandon
  * @version 1.0

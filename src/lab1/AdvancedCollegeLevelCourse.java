@@ -1,6 +1,14 @@
 
 package lab1;
 
+/*
+    An AdvacnedCollegeLevelCourse is almost exactly the same as CollegeLevelCoruse except
+    they reqire previous CollegeLevelCourses to have been completed before they can be taken
+
+    With that in mind they inhearit everything CollegeLevelCourses do and should have a reasonable 
+    list of CollegeLevelCourse objects as prerequisites
+
+*/
 public class AdvancedCollegeLevelCourse extends CollegeLevelCourse{
     public static final int MAX_PREREQUISITES = 4;
     public static final int MIN_PREREQUISITES = 1;
