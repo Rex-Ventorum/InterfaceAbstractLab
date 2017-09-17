@@ -1,14 +1,14 @@
 
 package lab1;
 
-public abstract class AdvancedCollegeLevelCourse extends CollegeLevelCourse{
+public class AdvancedCollegeLevelCourse extends CollegeLevelCourse{
     public static final int MAX_PREREQUISITES = 4;
     public static final int MIN_PREREQUISITES = 1;
     
     private CollegeLevelCourse[] prerequisites;
     
-    public AdvancedCollegeLevelCourse(String courseName, String courseNumber, String departmentName, CollegeLevelCourse[] prerequisites){
-        super(courseName,courseNumber,departmentName);
+    public AdvancedCollegeLevelCourse(String courseName, String courseNumber, CollegeLevelCourse[] prerequisites){
+        super(courseName,courseNumber);
         setPrerequisites(prerequisites);
     }
     

@@ -12,8 +12,8 @@ public class AdvancedJavaCourse {
     private String prerequisites;
 
     public AdvancedJavaCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
+        setCourseName(courseName);
+        setCourseNumber(courseNumber);
     }
 
     public String getPrerequisites() {

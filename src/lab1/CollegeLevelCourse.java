@@ -1,26 +1,22 @@
 package lab1;
 
-public abstract class CollegeLevelCourse {
+public class CollegeLevelCourse extends GenericSchoolCourse{
     public static final double MAX_CREDITS = 4.0;
     public static final double MIN_CREDITS = 0.0; //Could just be a manditory meeting coruse
     
-    private String departmentName;
-    private String courseName;
+
     private String courseNumber;
     private double credits;
     
-    public CollegeLevelCourse(String courseName, String courseNumber, String departmentName){
-        setCourseName(courseName);
+    public CollegeLevelCourse(String courseName, String courseNumber){
+        super(courseName);
         setCourseNumber(courseNumber);
-        setDepartmentName(departmentName);
     }
     
     //----------------------//
     //--- GETTER METHODS ---//
     //----------------------//
-    
-    public final String getDepartmentName(){return departmentName;}
-    public final String getCourseName() {return courseName;}
+  
     public final String getCourseNumber() {return courseNumber;}
     public final double getCredits(){return credits;}
     
@@ -28,21 +24,10 @@ public abstract class CollegeLevelCourse {
     //--- SETTER METHODS ---//
     //----------------------//
     
-    public final void setDepartmentName(String departmentName){
-        if(stringIsNullOrEmpty(departmentName)) throw new IllegalArgumentException("Course Name may not be null or empty");
-        this.departmentName = departmentName;
-    }
-    
     public final void setCredits(double credits) {
         if(credits < MIN_CREDITS|| credits > MAX_CREDITS) 
             throw new IllegalArgumentException("Invalid Credit Range");
         this.credits = credits;
-    }
-
-
-    public final void setCourseName(String courseName) {
-        if(stringIsNullOrEmpty(courseName)) throw new IllegalArgumentException("Course Name may not be null or empty");
-        this.courseName = courseName;
     }
 
     public final void setCourseNumber(String courseNumber) {
