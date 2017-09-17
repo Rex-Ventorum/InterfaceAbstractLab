@@ -1,7 +1,7 @@
 
 package lab1;
 
-public class AdvancedCollegeLevelCourse extends BaseCollegeLevelCourse{
+public abstract class AdvancedCollegeLevelCourse extends CollegeLevelCourse{
     public static final int MAX_PREREQUISITES = 4;
     public static final int MIN_PREREQUISITES = 1;
     
